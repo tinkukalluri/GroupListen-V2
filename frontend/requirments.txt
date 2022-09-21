@@ -1,0 +1,258 @@
+NPM Setup Commands ⌨ 
+1.
+package.json
+npm init -y
+
+2.
+transcompile all the scripts to single script
+npm i webpack webpack-cli --save-dev
+
+3.scripts compatable with all browsers
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+
+4.
+react and react-dom installing
+npm i react react-dom --save-dev
+
+5.
+prebuild component so we dont have to style our web page ourself
+just like bootstrap
+npm install @material-ui/core
+
+6.
+it enables us to use aysnc and await in js code
+npm install @babel/plugin-proposal-class-properties
+
+7.
+reroute pages
+npm install react-router-dom
+
+8.
+icons from material ui
+npm install @material-ui/icons
+
+9. 
+this cammand is used to compile the scripts then create a new script in static/frontend/main.json
+and will automatically update everytime we save a file
+npm run dev 
+
+
+
+
+Console data:
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (grouplisten)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\package.json:
+
+{
+  "name": "grouplisten",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten>cd frontend
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (frontend) npm WARN init canceled
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm init -y
+Wrote to C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend\package.json:
+
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm webpack webpack-cli --save-dev
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, fund, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm <command> -h  quick help on <command>
+npm -l            display full usage info
+npm help <term>   search for help on <term>
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\sintin\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@6.14.10 C:\Program Files\nodejs\node_modules\npm
+
+Did you mean this?
+    pack
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm i webpack webpack-cli --save-dev
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN frontend@1.0.0 No description
+npm WARN frontend@1.0.0 No repository field.
+
++ webpack@5.70.0
++ webpack-cli@4.9.2
+added 120 packages from 156 contributors and audited 120 packages in 21.68s
+
+17 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm i @bable/core babel/preset-env @bable-react --save-dev
+npm ERR! code EINVALIDTAGNAME
+npm ERR! Invalid tag name "@bable-react": Tags may not have any characters that encodeURIComponent encodes.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\sintin\AppData\Roaming\npm-cache\_logs\2022-03-15T08_02_12_447Z-debug.log
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm i @bable/core babel/preset-env @bable-react --save-dev
+info: please complete authentication in your browser...-session 71529bc90cbfe634
+npm ERR! code EINVALIDTAGNAME
+npm ERR! Invalid tag name "@bable-react": Tags may not have any characters that encodeURIComponent encodes.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\sintin\AppData\Roaming\npm-cache\_logs\2022-03-15T08_02_54_842Z-debug.log
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+npm WARN frontend@1.0.0 No description
+npm WARN frontend@1.0.0 No repository field.
+
++ @babel/core@7.17.7
++ babel-loader@8.2.3
++ @babel/preset-react@7.16.7
++ @babel/preset-env@7.16.11
+added 165 packages from 75 contributors and audited 285 packages in 17.642s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm i react react-dom --save-dev
+npm WARN frontend@1.0.0 No description
+npm WARN frontend@1.0.0 No repository field.
+
++ react@17.0.2
++ react-dom@17.0.2
+added 5 packages from 2 contributors and audited 290 packages in 3.814s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm install @material-ui/core
+npm WARN deprecated @material-ui/core@4.12.3: You can now upgrade to @mui/material. See the guide: https://mui.com/guides/migration-v4/
+npm WARN deprecated @material-ui/styles@4.11.4: You can now upgrade to @mui/styles. See the guide: https://mui.com/guides/migration-v4/
+npm WARN deprecated @material-ui/system@4.12.1: You can now upgrade to @mui/system. See the guide: https://mui.com/guides/migration-v4/
+npm WARN frontend@1.0.0 No description
+npm WARN frontend@1.0.0 No repository field.
+
++ @material-ui/core@4.12.3
+added 35 packages from 45 contributors and audited 325 packages in 17.281s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm install @babel/plugin-proposal-class-properties
+npm WARN frontend@1.0.0 No description
+npm WARN frontend@1.0.0 No repository field.
+
++ @babel/plugin-proposal-class-properties@7.16.7
+updated 1 package and audited 325 packages in 3.028s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm install react-router-dom
+npm WARN frontend@1.0.0 No description
+npm WARN frontend@1.0.0 No repository field.
+
++ react-router-dom@6.2.2
+added 3 packages from 1 contributor and audited 328 packages in 5.045s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+C:\Users\sintin\Desktop\Projects_3\GroupListen\GroupListen\Grouplisten\frontend>npm install @material-ui/icons
+npm WARN deprecated @material-ui/icons@4.11.2: You can now upgrade to @mui/icons. See the guide: https://mui.com/guides/migration-v4/
+npm WARN frontend@1.0.0 No description
+npm WARN frontend@1.0.0 No repository field.
+
++ @material-ui/icons@4.11.2
+added 1 package from 1 contributor and audited 329 packages in 37.801s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities

@@ -1,0 +1,200 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --sp-green: #1fdf64;
+  --sp-grey: #565656;
+  --sp-grey-light: #f1f1f1;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.music-player {
+  border: 3px solid black;
+  border-radius: 33px;
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.room-setting {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+div {
+  color: var(--sp-grey-light);
+  line-height: 1.5rem;
+}
+
+.room-container {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+/*  "inline-size": "max-content" */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+/* .chat-container,
+.search-container,
+.playlist-container,
+.queue-container ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.chat-container,
+.search-container,
+.playlist-container,
+.queue-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.chat-container {
+  overflow: hidden;
+}
+
+.chat-container {
+}
+
+.search-container {
+  padding: 12px;
+  border: 3px solid black;
+  border-radius: 33px;
+  max-height: 50%;
+}
+
+.playlist-container {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.queue-container {
+  flex-grow: 3;
+  margin-bottom: 6px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sp-green);
+}
+
+/* .room-middle {
+  margin: 6px;
+  border-radius: 36px;
+  border: 7px solid black;
+  background-color: #3b3b3b;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+} */
+
+.room-room-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.room-left,
+.room-right,
+.room-middle {
+  padding: 12px;
+  border-radius: 36px;
+  border: 7px solid black;
+  background-color: var(--sp-grey);
+  position: relative;
+  width: 100%;
+  max-width: 33%;
+  height: 100%;
+}
+
+.room-search-bar {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.room-search-bar > .input-search {
+  padding: 10px;
+  width: 100%;
+  border-radius: 33px;
+  border: 4px solid black;
+}

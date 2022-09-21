@@ -1,0 +1,25 @@
+
+
+added_at= items[0].added_at
+
+artist:
+artist_list=items[0].track.artists
+
+
+Album
+album_id=items[0].track.album.id
+img_list=items[0].track.album.images
+album_name=items[0].track.album.name
+album_uri=items[0].track.album.uri
+album_tot_tracks=items[0].track.album.total_tracks
+
+
+track
+track_name=items[0].track.name
+track_id=items[0].track.id
+track_uri=items[0].track.uri
+track_no=items[0].track.track_number
+duration_ms=items[0].track.duration_ms
+
+
+

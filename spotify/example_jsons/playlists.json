@@ -1,0 +1,1180 @@
+{
+    "href": "https://api.spotify.com/v1/users/tinkukalluri19859/playlists?offset=0&limit=50",
+    "items": [
+        {
+            "collaborative": false,
+            "description": "Find some of my favorite songs in here and songs that I use in my TikTok and YouTube videos 💜 ✨",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3KhaGCFC9zble3BfymS2Qg"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3KhaGCFC9zble3BfymS2Qg",
+            "id": "3KhaGCFC9zble3BfymS2Qg",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebbda751ca2e52c42bd5c48e731",
+                    "width": null
+                }
+            ],
+            "name": "MY FAVORITE SONGS",
+            "owner": {
+                "display_name": "Brooke Monk",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/312c2bhnrwy7wx7betmvj6ubqgnq"
+                },
+                "href": "https://api.spotify.com/v1/users/312c2bhnrwy7wx7betmvj6ubqgnq",
+                "id": "312c2bhnrwy7wx7betmvj6ubqgnq",
+                "type": "user",
+                "uri": "spotify:user:312c2bhnrwy7wx7betmvj6ubqgnq"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTgsZjViODZhMTkwZTM0NTkyNTdjNDA1MTY4YzMzODhiM2UzZjkxNTYwOA==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3KhaGCFC9zble3BfymS2Qg/tracks",
+                "total": 11
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3KhaGCFC9zble3BfymS2Qg"
+        },
+        {
+            "collaborative": false,
+            "description": "Wanna know what India&#x27;s listening to? Listen to the Top Trending India Playlist.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3vaFOIAhoVXb1nnw0uhylC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3vaFOIAhoVXb1nnw0uhylC",
+            "id": "3vaFOIAhoVXb1nnw0uhylC",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb622e43aa601c67d988c50f1f",
+                    "width": null
+                }
+            ],
+            "name": "Top Trending India",
+            "owner": {
+                "display_name": "Digster India",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/vqtrmz100zu1h0fl4uz8co3of"
+                },
+                "href": "https://api.spotify.com/v1/users/vqtrmz100zu1h0fl4uz8co3of",
+                "id": "vqtrmz100zu1h0fl4uz8co3of",
+                "type": "user",
+                "uri": "spotify:user:vqtrmz100zu1h0fl4uz8co3of"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NjU5LDVhNzg0MmY3MWZjZTZhZTkyZGNjYjJkMGEyZDc3NWQyYzU1NDA1MmI=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3vaFOIAhoVXb1nnw0uhylC/tracks",
+                "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3vaFOIAhoVXb1nnw0uhylC"
+        },
+        {
+            "collaborative": false,
+            "description": "The biggest tracks featuring all your favourite artists!",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/36ADqk8xgLEcVciKXMgsnm"
+            },
+            "href": "https://api.spotify.com/v1/playlists/36ADqk8xgLEcVciKXMgsnm",
+            "id": "36ADqk8xgLEcVciKXMgsnm",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb16202f253fa9a7ebcda098b0",
+                    "width": null
+                }
+            ],
+            "name": "HITS OF 2022",
+            "owner": {
+                "display_name": "Digster India",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/vqtrmz100zu1h0fl4uz8co3of"
+                },
+                "href": "https://api.spotify.com/v1/users/vqtrmz100zu1h0fl4uz8co3of",
+                "id": "vqtrmz100zu1h0fl4uz8co3of",
+                "type": "user",
+                "uri": "spotify:user:vqtrmz100zu1h0fl4uz8co3of"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NzgyLDBlYzZkY2U0NDA4NzdlM2RhZjkxYzJmMzRiYjA5M2E0Njk0ZDMwOTA=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/36ADqk8xgLEcVciKXMgsnm/tracks",
+                "total": 38
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:36ADqk8xgLEcVciKXMgsnm"
+        },
+        {
+            "collaborative": false,
+            "description": "Love is listening to good music in the rain.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/1AC1qLroAxDMbDlLs97jqc"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1AC1qLroAxDMbDlLs97jqc",
+            "id": "1AC1qLroAxDMbDlLs97jqc",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb2d864fe9358194635076b58b",
+                    "width": null
+                }
+            ],
+            "name": "MONSOON ROMANCE: ENGLISH",
+            "owner": {
+                "display_name": "Digster India",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/vqtrmz100zu1h0fl4uz8co3of"
+                },
+                "href": "https://api.spotify.com/v1/users/vqtrmz100zu1h0fl4uz8co3of",
+                "id": "vqtrmz100zu1h0fl4uz8co3of",
+                "type": "user",
+                "uri": "spotify:user:vqtrmz100zu1h0fl4uz8co3of"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTA3LDE5NTgzMGExMzZmNDVmMzQwOGE2MDhlNjE0NWZhYWNhM2IwYmU0MjA=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/1AC1qLroAxDMbDlLs97jqc/tracks",
+                "total": 54
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1AC1qLroAxDMbDlLs97jqc"
+        },
+        {
+            "collaborative": false,
+            "description": "Alia-Ranbir-Love Songs-KK-Kartik Aaryan-Arijit Singh-Pritam-Love Songs-Bollywood Love Songs-Hindi Love Songs-Soft Romantic Love Songs-Hindi Films-Bollywood Romance-Bollywood Soft Romance-Relaxing Love Songs-Best Love Songs-Slow Romantic Bollywood Songs-Most Romantic LoveSong",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/45sMfdAKJExVmFvBd2TwmU"
+            },
+            "href": "https://api.spotify.com/v1/playlists/45sMfdAKJExVmFvBd2TwmU",
+            "id": "45sMfdAKJExVmFvBd2TwmU",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebbd0bae12d712bbfc35bd072a1",
+                    "width": null
+                }
+            ],
+            "name": "Dil Ka Sukoon",
+            "owner": {
+                "display_name": "Filtr India",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/filtrindia"
+                },
+                "href": "https://api.spotify.com/v1/users/filtrindia",
+                "id": "filtrindia",
+                "type": "user",
+                "uri": "spotify:user:filtrindia"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTcwNCxkNTdiMjgyNzUyYzNiYjdmMmMxNmM1ODM1NzExZjc5YzFmNjU2ZmU0",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/45sMfdAKJExVmFvBd2TwmU/tracks",
+                "total": 105
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:45sMfdAKJExVmFvBd2TwmU"
+        },
+        {
+            "collaborative": false,
+            "description": "Reels Trending-Top Trending on Instagram-Kesariya-Love Storiya-Brahmastra-Instagram Reels Songs-IG Reels Trending-Wedding Songs-Reels Trends-2020 2021 2022-Best Bollywood Songs-Trending Songs-Romantic Songs-Love Songs-Reels Songs-Trending songs of 2022-Best Trending Hits-Trending Hindi Songs-Ranbir",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/0Z7za9pQFEaGBVYTnvJMi1"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0Z7za9pQFEaGBVYTnvJMi1",
+            "id": "0Z7za9pQFEaGBVYTnvJMi1",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb8a224923d666e331a7018450",
+                    "width": null
+                }
+            ],
+            "name": "Trending Insta Reels 2022 - Hindi",
+            "owner": {
+                "display_name": "Filtr India",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/filtrindia"
+                },
+                "href": "https://api.spotify.com/v1/users/filtrindia",
+                "id": "filtrindia",
+                "type": "user",
+                "uri": "spotify:user:filtrindia"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MjA1NSwyMzMyNWQzNGFhZTUwMWM0Yzg2NGFmMDUyZGFhMmNkOGJhNWQ1ZjVk",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/0Z7za9pQFEaGBVYTnvJMi1/tracks",
+                "total": 90
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0Z7za9pQFEaGBVYTnvJMi1"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/0ainIPFiG9qDlvVRYrxsbV"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0ainIPFiG9qDlvVRYrxsbV",
+            "id": "0ainIPFiG9qDlvVRYrxsbV",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b273060ef33ee217386d26ad60dbab67616d0000b273100ee873e5d9966a9db6c7c6ab67616d0000b273463410f6597db5e9f484c399ab67616d0000b27355d06097244512041e6877d6",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b273060ef33ee217386d26ad60dbab67616d0000b273100ee873e5d9966a9db6c7c6ab67616d0000b273463410f6597db5e9f484c399ab67616d0000b27355d06097244512041e6877d6",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b273060ef33ee217386d26ad60dbab67616d0000b273100ee873e5d9966a9db6c7c6ab67616d0000b273463410f6597db5e9f484c399ab67616d0000b27355d06097244512041e6877d6",
+                    "width": 60
+                }
+            ],
+            "name": "Telugu 2022 || !2022",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "NTcsMWQxOWY5MjRkZDFiNDRkNjQyMzRhOGZiMzA1ZDNkZmNlNDY0NWYzZg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/0ainIPFiG9qDlvVRYrxsbV/tracks",
+                "total": 52
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0ainIPFiG9qDlvVRYrxsbV"
+        },
+        {
+            "collaborative": false,
+            "description": "The finest set of Telugu music from the past 5 years. \nCover : RRR",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX5VOFoIqmrOV"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5VOFoIqmrOV",
+            "id": "37i9dQZF1DX5VOFoIqmrOV",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706f000000039d8556d504c40e622127555b",
+                    "width": null
+                }
+            ],
+            "name": "Tollywood Pearls",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTY2MDYzNTYyMSwwMDAwMDAwMDJmZmI1MjIzZjBjYzI0NTkzNmFjYTZjZDhjZWMzNTI2",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX5VOFoIqmrOV/tracks",
+                "total": 58
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX5VOFoIqmrOV"
+        },
+        {
+            "collaborative": false,
+            "description": "A decade of Bollywood romance from the early 00's ",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWVq1SXCH6uFn"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVq1SXCH6uFn",
+            "id": "37i9dQZF1DWVq1SXCH6uFn",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706f00000003712a998366ce62f36d690a9b",
+                    "width": null
+                }
+            ],
+            "name": "00's Romance Hits",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTY1NzU5OTEyOCwwMDAwMDAwMGNlZDRjYTEwMjg3NTk3ZjNjMWI2ODhlMjFiZDkwMDYy",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWVq1SXCH6uFn/tracks",
+                "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWVq1SXCH6uFn"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/4KWB6d4rcTmmYMq2hdDviC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/4KWB6d4rcTmmYMq2hdDviC",
+            "id": "4KWB6d4rcTmmYMq2hdDviC",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2735b828c6509f38f02a8e12236ab67616d0000b2737476a766e798ff26abcc2cb0ab67616d0000b273a530ab27e2604b4cd7e84c45ab67616d0000b273c360cd66ca227cc0b4199b5a",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2735b828c6509f38f02a8e12236ab67616d0000b2737476a766e798ff26abcc2cb0ab67616d0000b273a530ab27e2604b4cd7e84c45ab67616d0000b273c360cd66ca227cc0b4199b5a",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2735b828c6509f38f02a8e12236ab67616d0000b2737476a766e798ff26abcc2cb0ab67616d0000b273a530ab27e2604b4cd7e84c45ab67616d0000b273c360cd66ca227cc0b4199b5a",
+                    "width": 60
+                }
+            ],
+            "name": "Upbeat",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTM5LGIyODlmNTNmYmY3ZmQxMmM4OThiODdmZDNmZjE1Mzk5ZDExMmE0MTY=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/4KWB6d4rcTmmYMq2hdDviC/tracks",
+                "total": 134
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:4KWB6d4rcTmmYMq2hdDviC"
+        },
+        {
+            "collaborative": false,
+            "description": "The coolest playlist with the hottest songs.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/1lhhsKxWLxU3onm28jsTI0"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1lhhsKxWLxU3onm28jsTI0",
+            "id": "1lhhsKxWLxU3onm28jsTI0",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebbdcb9cb01f759e39318a5e51c",
+                    "width": null
+                }
+            ],
+            "name": "COOL FOR THE SUMMER",
+            "owner": {
+                "display_name": "Digster India",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/vqtrmz100zu1h0fl4uz8co3of"
+                },
+                "href": "https://api.spotify.com/v1/users/vqtrmz100zu1h0fl4uz8co3of",
+                "id": "vqtrmz100zu1h0fl4uz8co3of",
+                "type": "user",
+                "uri": "spotify:user:vqtrmz100zu1h0fl4uz8co3of"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NzgsZGMzZDU0ZmM3NzYwZjQ1YzQyMWQ4NGY2OTFlNWE2M2E4MDYxMWNlZg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/1lhhsKxWLxU3onm28jsTI0/tracks",
+                "total": 21
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1lhhsKxWLxU3onm28jsTI0"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/3doiT8JMh5tknR7ZsbVYSN"
+            },
+            "href": "https://api.spotify.com/v1/playlists/3doiT8JMh5tknR7ZsbVYSN",
+            "id": "3doiT8JMh5tknR7ZsbVYSN",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2731186688408c0a68041dc74d4ab67616d0000b273a0174ac9f29d0d48d76c3e00ab67616d0000b273e8b17e80aac781bfb2da6bacab67616d0000b273f8910d64a61c3e3dc970613c",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2731186688408c0a68041dc74d4ab67616d0000b273a0174ac9f29d0d48d76c3e00ab67616d0000b273e8b17e80aac781bfb2da6bacab67616d0000b273f8910d64a61c3e3dc970613c",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2731186688408c0a68041dc74d4ab67616d0000b273a0174ac9f29d0d48d76c3e00ab67616d0000b273e8b17e80aac781bfb2da6bacab67616d0000b273f8910d64a61c3e3dc970613c",
+                    "width": 60
+                }
+            ],
+            "name": "2022 || !2022",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTE2LDAyNGI4YmQzN2Y5OTBjMGZjYjIwZTRmN2ZjMjRjMmUzYzI3NjgxYmI=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/3doiT8JMh5tknR7ZsbVYSN/tracks",
+                "total": 202
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:3doiT8JMh5tknR7ZsbVYSN"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/0tvjyes3ys3rT9KD2Dm57W"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0tvjyes3ys3rT9KD2Dm57W",
+            "id": "0tvjyes3ys3rT9KD2Dm57W",
+            "images": [],
+            "name": "My Playlist #7",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MSw3MjVmYTkxZWFkZWM2MDM2ZmRkNDRmOWQxZWI0YzVkNzM5OGM4YTNj",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/0tvjyes3ys3rT9KD2Dm57W/tracks",
+                "total": 0
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0tvjyes3ys3rT9KD2Dm57W"
+        },
+        {
+            "collaborative": false,
+            "description": "Spotify Wrapped presents the songs that you loved most this year.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1EUMDoJuT8yJsl"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EUMDoJuT8yJsl",
+            "id": "37i9dQZF1EUMDoJuT8yJsl",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://lineup-images.scdn.co/wrapped-2021-top100_LARGE-en.jpg",
+                    "width": null
+                }
+            ],
+            "name": "Your Top Songs 2021",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MCwwMDAwMDAwMGI4NTUxNTAzMWU2OTNmM2QwMzk3OTZlNWZjMWZiZjhh",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EUMDoJuT8yJsl/tracks",
+                "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1EUMDoJuT8yJsl"
+        },
+        {
+            "collaborative": false,
+            "description": "Best Bollywood dance songs from last 10 years. Cover- Kartik Aaryan ",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX8xfQRRX1PDm"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8xfQRRX1PDm",
+            "id": "37i9dQZF1DX8xfQRRX1PDm",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706f0000000343081d5f49a1a75ddd14b408",
+                    "width": null
+                }
+            ],
+            "name": "Bollywood Dance Music",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTY2MTQyNTExOSwwMDAwMDAwMGU1YzNiZjYwYzk5NjNiZjk2MTgyMmJiOTJiYjc0Nzdh",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX8xfQRRX1PDm/tracks",
+                "total": 54
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX8xfQRRX1PDm"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/138dR0IGzIpePyWLyReKhp"
+            },
+            "href": "https://api.spotify.com/v1/playlists/138dR0IGzIpePyWLyReKhp",
+            "id": "138dR0IGzIpePyWLyReKhp",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273d038ad81ca0a422e45caff99",
+                    "width": 640
+                }
+            ],
+            "name": "....",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MyxjMjk1NjQ1NGIwNzJhYTk4OGRmZGIxNWExYzJkN2E2Y2M4ZjNkNzQy",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/138dR0IGzIpePyWLyReKhp/tracks",
+                "total": 2
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:138dR0IGzIpePyWLyReKhp"
+        },
+        {
+            "collaborative": false,
+            "description": "A playlist of the best house tracks ever. Chill House, Deep House, Tropical House, Deep House Mix, Slap House, Deep House Covers, Deep House Remix, EDM, Dance Music, Deep House Lounge, Chillout, Workout Music, Motivation Music. Feature HVME, Meduza, Tiësto and more Updated Weekly",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/6nuPhpPZembzemjMcZft04"
+            },
+            "href": "https://api.spotify.com/v1/playlists/6nuPhpPZembzemjMcZft04",
+            "id": "6nuPhpPZembzemjMcZft04",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb8c2bda66dcd2b96b4d507a89",
+                    "width": null
+                }
+            ],
+            "name": "DEEP HOUSE 2022 🚘 Best of deep house, tropical house and EDM",
+            "owner": {
+                "display_name": "DEEP UNIVERSE",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/lhkilpmb0abw381omc2ina28m"
+                },
+                "href": "https://api.spotify.com/v1/users/lhkilpmb0abw381omc2ina28m",
+                "id": "lhkilpmb0abw381omc2ina28m",
+                "type": "user",
+                "uri": "spotify:user:lhkilpmb0abw381omc2ina28m"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTM1MzMsMzI4Yjg1OWY4ZTc4ZmIxNWJmZDM4ZTM4MDVhZjU3NzE5NTEwMDgzNA==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/6nuPhpPZembzemjMcZft04/tracks",
+                "total": 152
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:6nuPhpPZembzemjMcZft04"
+        },
+        {
+            "collaborative": false,
+            "description": "Nicki Minaj is on top of the Hottest 50!",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
+            "id": "37i9dQZF1DXcBWIGoYBM5M",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706f00000003e8641a419c367f9504f587aa",
+                    "width": null
+                }
+            ],
+            "name": "Today's Top Hits",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTY2MjY5NjAwMCwwMDAwMDAwMDQ2MTA1ZDBlYmZhMGQ1MWI2NjRiMGQxOTkxOWI1NGZl",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
+                "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
+        },
+        {
+            "collaborative": false,
+            "description": "The hottest tracks in India. Cover: Charlie Puth",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DX0ieekvzt1Ic"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0ieekvzt1Ic",
+            "id": "37i9dQZF1DX0ieekvzt1Ic",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706f00000003a637834476646e31e20f034e",
+                    "width": null
+                }
+            ],
+            "name": "Hot Hits India",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTY2MjExMDc2MCwwMDAwMDAwMDAzMmRmOWQ4N2Y5ZTY3YmM0YWUwYjAxMTc1NjA4Nzdm",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DX0ieekvzt1Ic/tracks",
+                "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DX0ieekvzt1Ic"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/6gXEelOwZSABFCka2CjfzM"
+            },
+            "href": "https://api.spotify.com/v1/playlists/6gXEelOwZSABFCka2CjfzM",
+            "id": "6gXEelOwZSABFCka2CjfzM",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b2732f3875547214915b3b53bff7",
+                    "width": 640
+                }
+            ],
+            "name": "Chitti (From \"Jathi Ratnalu\") – Ram Miriyala",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MyxjNTI3MzQ4MGYxMDhlMDJlM2I3OGZkNDYxYTk5OTBlODhjNGQ3MjZi",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/6gXEelOwZSABFCka2CjfzM/tracks",
+                "total": 2
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:6gXEelOwZSABFCka2CjfzM"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/6GIXvOAKBFJNE3b2dkcLzE"
+            },
+            "href": "https://api.spotify.com/v1/playlists/6GIXvOAKBFJNE3b2dkcLzE",
+            "id": "6GIXvOAKBFJNE3b2dkcLzE",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2735038c2513329a3123b62923dab67616d0000b27362a57823eced1cb4fd93b2c1ab67616d0000b27390eb8cc7792233599046a61fab67616d0000b273e0fc847e272a9bf7a04643da",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2735038c2513329a3123b62923dab67616d0000b27362a57823eced1cb4fd93b2c1ab67616d0000b27390eb8cc7792233599046a61fab67616d0000b273e0fc847e272a9bf7a04643da",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2735038c2513329a3123b62923dab67616d0000b27362a57823eced1cb4fd93b2c1ab67616d0000b27390eb8cc7792233599046a61fab67616d0000b273e0fc847e272a9bf7a04643da",
+                    "width": 60
+                }
+            ],
+            "name": "2021 || !2021",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MjY2LDRkMDRlMTlhYjk4ZGRhMWI4YjNmMmI2ZTQ5YjhiY2U5MzQ4OTJmZmU=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/6GIXvOAKBFJNE3b2dkcLzE/tracks",
+                "total": 243
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:6GIXvOAKBFJNE3b2dkcLzE"
+        },
+        {
+            "collaborative": false,
+            "description": "most poppin tiktok bangers at the moment",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/6RXgHyqUiEbSmX7NQZ05yQ"
+            },
+            "href": "https://api.spotify.com/v1/playlists/6RXgHyqUiEbSmX7NQZ05yQ",
+            "id": "6RXgHyqUiEbSmX7NQZ05yQ",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebba87745f5adbdd66e33403718",
+                    "width": null
+                }
+            ],
+            "name": "tik tok songs trending in 2022",
+            "owner": {
+                "display_name": "knivgaffel",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/knivgaffel"
+                },
+                "href": "https://api.spotify.com/v1/users/knivgaffel",
+                "id": "knivgaffel",
+                "type": "user",
+                "uri": "spotify:user:knivgaffel"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTAyOTcsZDM2NWQzNTA4ZDA0MzMxN2UwYTI3NzRjZjBhYzZlODQ1NjY0NDlmYg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/6RXgHyqUiEbSmX7NQZ05yQ/tracks",
+                "total": 286
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:6RXgHyqUiEbSmX7NQZ05yQ"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/5R5ZqdTCPHAoT7qiybPF5Z"
+            },
+            "href": "https://api.spotify.com/v1/playlists/5R5ZqdTCPHAoT7qiybPF5Z",
+            "id": "5R5ZqdTCPHAoT7qiybPF5Z",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b27317e013ccb50703f3e9bcf1d8ab67616d0000b273199e7c3d46fcd7d939237ce9ab67616d0000b273723c541e574b10a500d22e4dab67616d0000b2738f89a24db2c00dde8554a279",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b27317e013ccb50703f3e9bcf1d8ab67616d0000b273199e7c3d46fcd7d939237ce9ab67616d0000b273723c541e574b10a500d22e4dab67616d0000b2738f89a24db2c00dde8554a279",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b27317e013ccb50703f3e9bcf1d8ab67616d0000b273199e7c3d46fcd7d939237ce9ab67616d0000b273723c541e574b10a500d22e4dab67616d0000b2738f89a24db2c00dde8554a279",
+                    "width": 60
+                }
+            ],
+            "name": "Cout<<\"What i like{telugu;}\"<<endl;",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "OCxhOGNjNjk1OTE2YTBmNWE4NGU1ZjZiNTQ4OGYzMTIzZTA2ZWQ5NDFh",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/5R5ZqdTCPHAoT7qiybPF5Z/tracks",
+                "total": 7
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:5R5ZqdTCPHAoT7qiybPF5Z"
+        },
+        {
+            "collaborative": false,
+            "description": "The songs you loved most this year, all wrapped up.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1ELYNhkGzf7uvy"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1ELYNhkGzf7uvy",
+            "id": "37i9dQZF1ELYNhkGzf7uvy",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://lineup-images.scdn.co/wrapped-2020-top100_LARGE-en.jpg",
+                    "width": null
+                }
+            ],
+            "name": "Your Top Songs 2020",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MjY3NzQ2MzcsMDAwMDAwMDBjYWRlOTc1YWRjYjhkZjNjZGQyYjhhYmRhNTY4MWEyMg==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1ELYNhkGzf7uvy/tracks",
+                "total": 100
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1ELYNhkGzf7uvy"
+        },
+        {
+            "collaborative": false,
+            "description": "Press play, press start.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZF1DWTyiBJ6yEqeu"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTyiBJ6yEqeu",
+            "id": "37i9dQZF1DWTyiBJ6yEqeu",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706f00000003b3e682b5049e2e0b86da6b5a",
+                    "width": null
+                }
+            ],
+            "name": "Top Gaming Tracks",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MTY2MzI0OTYyNCwwMDAwMDAwMDdjYzZhMjc4MDFiODA4ZGMyMzkyNmU1NzM2YTRkY2Vj",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DWTyiBJ6yEqeu/tracks",
+                "total": 80
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZF1DWTyiBJ6yEqeu"
+        },
+        {
+            "collaborative": false,
+            "description": "Your daily update of the most played tracks right now - India.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZEVXbLZ52XmnySJg"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXbLZ52XmnySJg",
+            "id": "37i9dQZEVXbLZ52XmnySJg",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_large.jpg",
+                    "width": null
+                }
+            ],
+            "name": "Top 50 - India",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NzE2NTU1Mzk1LDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDY1NmU=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXbLZ52XmnySJg/tracks",
+                "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZEVXbLZ52XmnySJg"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/0K8iXaOUEy7EVgQfuR5VoO"
+            },
+            "href": "https://api.spotify.com/v1/playlists/0K8iXaOUEy7EVgQfuR5VoO",
+            "id": "0K8iXaOUEy7EVgQfuR5VoO",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://mosaic.scdn.co/640/ab67616d0000b2731992dd7b33baf5887ea4a1ecab67616d0000b2737b93fd8b0ade33ceb9d536deab67616d0000b273bca30634e6cad10b97c03d21ab67616d0000b273d1f803cbe9c43700b4ea6895",
+                    "width": 640
+                },
+                {
+                    "height": 300,
+                    "url": "https://mosaic.scdn.co/300/ab67616d0000b2731992dd7b33baf5887ea4a1ecab67616d0000b2737b93fd8b0ade33ceb9d536deab67616d0000b273bca30634e6cad10b97c03d21ab67616d0000b273d1f803cbe9c43700b4ea6895",
+                    "width": 300
+                },
+                {
+                    "height": 60,
+                    "url": "https://mosaic.scdn.co/60/ab67616d0000b2731992dd7b33baf5887ea4a1ecab67616d0000b2737b93fd8b0ade33ceb9d536deab67616d0000b273bca30634e6cad10b97c03d21ab67616d0000b273d1f803cbe9c43700b4ea6895",
+                    "width": 60
+                }
+            ],
+            "name": "what i like<hindi>",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "MTEsY2FjZmQyNTc0NjI2OTVjMTg0ODIzMjk4NGE1YTJlNGI4MjAzOTQ1ZA==",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/0K8iXaOUEy7EVgQfuR5VoO/tracks",
+                "total": 10
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:0K8iXaOUEy7EVgQfuR5VoO"
+        },
+        {
+            "collaborative": false,
+            "description": "",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/35uWLOk9F0AOcPGyLLNXTC"
+            },
+            "href": "https://api.spotify.com/v1/playlists/35uWLOk9F0AOcPGyLLNXTC",
+            "id": "35uWLOk9F0AOcPGyLLNXTC",
+            "images": [
+                {
+                    "height": 640,
+                    "url": "https://i.scdn.co/image/ab67616d0000b273d2aaf635815c265aa1ecdecc",
+                    "width": 640
+                }
+            ],
+            "name": "what i like",
+            "owner": {
+                "display_name": "Tinku Kalluri",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/tinkukalluri19859"
+                },
+                "href": "https://api.spotify.com/v1/users/tinkukalluri19859",
+                "id": "tinkukalluri19859",
+                "type": "user",
+                "uri": "spotify:user:tinkukalluri19859"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "NSxhNDE4Nzc5NGVkNmNlNmJkNGUyZGNkODkxNjY3NzZlMjM1ZmFlOWZl",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/35uWLOk9F0AOcPGyLLNXTC/tracks",
+                "total": 4
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:35uWLOk9F0AOcPGyLLNXTC"
+        },
+        {
+            "collaborative": false,
+            "description": "Your daily update of the most played tracks right now - Global.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXbMDoHDwVN2tF",
+            "id": "37i9dQZEVXbMDoHDwVN2tF",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_large.jpg",
+                    "width": null
+                }
+            ],
+            "name": "Top 50 - Global",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "NzE2NTU1MzkxLDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDY1NmU=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXbMDoHDwVN2tF/tracks",
+                "total": 50
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZEVXbMDoHDwVN2tF"
+        },
+        {
+            "collaborative": false,
+            "description": "Your weekly mixtape of fresh music. Enjoy new music and deep cuts picked for you. Updates every Monday.",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/37i9dQZEVXcELGk06I707l"
+            },
+            "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcELGk06I707l",
+            "id": "37i9dQZEVXcELGk06I707l",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/4TuqmRkOARVetTi3Wv03gjHL3eiWu-Wmznh87gjJQyh4LGk_2iiGN_DvTPv6sQOFhdSDqWG5YaM6-HPcCaQUJSLWJuoJ2xFe26uljUDbc_vE2V8wcZE4Xpd1ro4VuQZcYOxlLP0-1ZgkxH8lxm-BGO0CKut5yks3Qs328E3P-moNzSCDpvTwSwEbBVQEQpskfX57PEOftXLlAFOTidDDmQ==/MjE6NTE6MDFUNzItOTAtMg==",
+                    "width": null
+                }
+            ],
+            "name": "Discover Weekly",
+            "owner": {
+                "display_name": "Spotify",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/spotify"
+                },
+                "href": "https://api.spotify.com/v1/users/spotify",
+                "id": "spotify",
+                "type": "user",
+                "uri": "spotify:user:spotify"
+            },
+            "primary_color": null,
+            "public": false,
+            "snapshot_id": "MCwwMDAwMDAwMDU4NjA4Y2U1YTcxYWU2Mjc2MzJiNTlmYzM4ZWI1MmRl",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/37i9dQZEVXcELGk06I707l/tracks",
+                "total": 30
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:37i9dQZEVXcELGk06I707l"
+        },
+        {
+            "collaborative": false,
+            "description": "J Balvin, Calvin Harris, Charlie Puth, Avicii, Rita Ora, Despacito Luis Fonsi, Ed Sheeran, Imagine Dragons, Demi Lovato, Jonas Blue, Liam Payne, Dua Lipa, P!nk, Selena Gomez, Danny Ocean, Maluma,",
+            "external_urls": {
+                "spotify": "https://open.spotify.com/playlist/1bOgYDOVLUe7SqzYV8Q0bq"
+            },
+            "href": "https://api.spotify.com/v1/playlists/1bOgYDOVLUe7SqzYV8Q0bq",
+            "id": "1bOgYDOVLUe7SqzYV8Q0bq",
+            "images": [
+                {
+                    "height": null,
+                    "url": "https://i.scdn.co/image/ab67706c0000bebb5904810d8cbdbe4103253283",
+                    "width": null
+                }
+            ],
+            "name": "Today’s Pop - Pop Hits - Modern Contemporary Pop 2019",
+            "owner": {
+                "display_name": "nuwaveselects",
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/user/nuwaveselects"
+                },
+                "href": "https://api.spotify.com/v1/users/nuwaveselects",
+                "id": "nuwaveselects",
+                "type": "user",
+                "uri": "spotify:user:nuwaveselects"
+            },
+            "primary_color": null,
+            "public": true,
+            "snapshot_id": "NjM4LDg2NTU5Y2M2YWI2ZjEyM2M1OTYyZTdmZjcwNzI5MGJjNjg2Nzc5OTE=",
+            "tracks": {
+                "href": "https://api.spotify.com/v1/playlists/1bOgYDOVLUe7SqzYV8Q0bq/tracks",
+                "total": 63
+            },
+            "type": "playlist",
+            "uri": "spotify:playlist:1bOgYDOVLUe7SqzYV8Q0bq"
+        }
+    ],
+    "limit": 50,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 31
+}

@@ -1,0 +1,109 @@
+._container {
+  justify-content: space-around;
+  display: flex;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+  /* padding: 10px; */
+  margin: 10px 0;
+}
+
+.msgbox-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* .contacts-container{
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+    } */
+
+._container img {
+  border-radius: 5px;
+  float: left;
+  max-width: 60px;
+  max-height: 60px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+._container img.right {
+  float: right;
+  margin-right: 0;
+}
+
+.user-sender {
+  text-align: right;
+  width: 100%;
+  float: right;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding: 9px 3px 0 3px;
+}
+
+.contact-sender {
+  padding: 9px 3px 0 3px;
+  width: 100%;
+  float: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+._container img {
+  z-index: 100;
+  font-size: 10px;
+  float: left;
+  max-width: 42px;
+  max-height: 42px;
+  width: 100%;
+  margin-right: 3px;
+  border-radius: 50%;
+  border: 1px solid #343a40;
+}
+
+._container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+._container img.right {
+  float: right;
+  margin-left: 3px;
+  margin-right: 0;
+}
+
+.sender {
+}
+
+.receiver {
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+.time-left,
+.time-right {
+  display: none;
+  position: absolute;
+  font-size: 9px;
+  bottom: -7px;
+}
+
+.onhover-show:hover ~ span {
+  display: block;
+}
+
+/* contacts css properties */

@@ -1,0 +1,27 @@
+currently_playing.name
+
+
+
+queue:
+
+    album:
+    album_artists_list= queue[0].album.artists
+    album_id=queue[0].album.id
+    album_img_list=queue[0].album.images
+    album_name=queue[0].album.name
+    album_uri=queue[0].album.uri
+    album_tot_tracks=queue[0].album.total_tracks
+    album_external_url= queue[0].album.external_urls
+
+    track:
+   track_artist[]= queue[0].artists
+   track_name= queue[0].name
+   track_href= queue[0].href
+   track_id= queue[0].id
+   track_no= queue[0].track_number
+   track_uri= queue[0].uri
+   track_duration_ms= queue[0].duration_ms
+   track_external_uri= queue[0].external_urls.spotify
+
+
+   

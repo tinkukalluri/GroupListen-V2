@@ -1,0 +1,7 @@
+.createroompage-container {
+  padding-bottom: 21px;
+  background: var(--sp-grey);
+  border: 7px solid black;
+  border-radius: 33px;
+  width: 60%;
+}

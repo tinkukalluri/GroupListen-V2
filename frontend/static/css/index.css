@@ -1,0 +1,16 @@
+#app {
+  background-color: #1fdf64;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
