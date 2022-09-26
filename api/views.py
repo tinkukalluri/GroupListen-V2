@@ -9,6 +9,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response    
 from django.conf import settings
 import datetime
+from spotify.models import *
 # Create your views here.
 # generics.createAPIView
 
@@ -29,6 +30,7 @@ def set_cookie(response, key, value, days_expire=7):
         domain=settings.SESSION_COOKIE_DOMAIN,
         secure=settings.SESSION_COOKIE_SECURE or None,
     )
+
 
 
 class RoomView(generics.ListAPIView):
@@ -55,16 +57,54 @@ class CreateRoomView(APIView):
                 room.votes_to_skip = votes_to_skip
                 room.save(update_fields=['guest_can_pause', 'votes_to_skip'])
                 self.request.session['room_code'] = RoomSerializer(room).data.get("code")
-                print("room code update:"+RoomSerializer(room).data.get("code"))
+                #print("room code update:"+RoomSerializer(room).data.get("code"))
                 return Response(RoomSerializer(room).data, status=status.HTTP_200_OK)
             else:
                 room = Room(host=user, guest_can_pause=guest_can_pause,
-                            votes_to_skip=votes_to_skip)
+                            votes_to_skip=votes_to_skip )
                 room.save()
+                # creating a queue
+                queue_obj=Queue(user_id=user, room_id=room , guests={
+                    'guests':[host]
+                })
+                queue_obj.save()
                 self.request.session['room_code'] = RoomSerializer(room).data.get("code")
-                print("room code new host:"+RoomSerializer(room).data.get("code"))
+                self.request.session['room_id'] = RoomSerializer(room).data.get("id")
+                #print("room code new host:"+RoomSerializer(room).data.get("code"))
                 return Response(RoomSerializer(room).data, status=status.HTTP_201_CREATED)
         return Response({'Bad Request': 'Invalid data...'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+def addGuests(user_id , room_code):
+    room_obj=Room.objects.filter(code=room_code)
+    if room_obj.exists():
+        room_obj=room_obj[0]
+        room_guests=room_obj.guests
+        room_guest_list=room_guests['guests']
+        try:
+            room_guest_list.index(user_id)
+        except ValueError:
+            room_guest_list.append(user_id)
+            room_obj.save(update_fields=['guests'])
+        return True
+    return False
+
+
+def removeGuests(user_id , room_code):
+    room_obj=Room.objects.filter(code=room_code)
+    if room_obj.exists():
+        room_obj=room_obj[0]
+        room_guests=room_obj.guests
+        room_guest_list=room_guests['guests']
+        try:
+            room_guest_list.index(user_id)
+        except ValueError:
+            room_guest_list.remove(user_id)
+            room_obj.save(update_fields=['guests'])
+        return True
+    return False
+
+
 
 
 
@@ -77,13 +117,14 @@ class GetRoom(APIView):
         if code != None:
             room = Room.objects.filter(code=code)
             if room.exists():
-                print("the room[].host:"+room[0].code)
+                #print("the room[].host:"+room[0].code)
                 data = RoomSerializer(room[0]).data
                 data['is_host'] = self.request.session['user_id'] == room[0].host.id
                 self.request.session['room_code'] = room[0].code
                 self.request.session['room_id']=room[0].id
-                print("session data in GetRoom:"+self.request.session['room_code'])
-                return Response(data, status=status.HTTP_200_OK)
+                if addGuests( self.request.session['user_id'] ,room[0].code ):
+                #print("session data in GetRoom:"+self.request.session['room_code'])
+                    return Response(data, status=status.HTTP_200_OK)
             return Response({'Room Not Found': 'Invalid Room Code.'}, status=status.HTTP_404_NOT_FOUND)
 
         return Response({'Bad Request': 'Code paramater not found in request'}, status=status.HTTP_400_BAD_REQUEST)
@@ -99,7 +140,9 @@ class JoinRoom(APIView):
             if room_result.exists():
                 room = room_result[0]
                 self.request.session['room_code'] = code
-                return Response({'message': 'Room Joined!'}, status=status.HTTP_200_OK)
+                res= addGuests( self.request.session['user_id'] ,room.code )
+                if res:
+                    return Response({'message': 'Room Joined!'}, status=status.HTTP_200_OK)
 
             return Response({'Bad Request': 'Invalid Room Code'}, status=status.HTTP_205_RESET_CONTENT)
 
@@ -108,7 +151,7 @@ class JoinRoom(APIView):
 
 class UserInRoom(APIView):
     def get(self, request,format=None):
-        print("user in room:"+str((self.request.session.get('room_code')!=None)))
+        #print("user in room:"+str((self.request.session.get('room_code')!=None)))
         if(self.request.session.get('room_code')):
             return Response({"code":self.request.session['room_code']},status=status.HTTP_200_OK)
         else:
@@ -119,13 +162,17 @@ class LeaveRoom(APIView):
     def post(self, request, format=None):
         if "room_code" in self.request.session:
             code=self.request.session.pop("room_code")
-            host_id=self.request.session['user_id']
-            room_result= Room.objects.filter(host=host_id)
+            user_id=self.request.session['user_id']
+            # room_result= Room.objects.filter(host=user_id)
+            room_result= Room.objects.filter(code= code)
             if room_result.exists():
                 room=room_result[0]
-                room.delete()
-            
-        return Response({"message":"sucesss"} , status=status.HTTP_200_OK)
+                if room.host.id==user_id:
+                    room.delete()
+                else:
+                    if removeGuests(user_id , code):
+                        return Response({"message":"sucesss"} , status=status.HTTP_200_OK)
+            return Response({"message":"something went wrong"} , status=status.HTTP_400_BAD_REQUEST)
 
 
 
@@ -172,8 +219,8 @@ class Login(APIView):
 class LoginWithGoogle(APIView):
     def post(self, request, format=None):
         post_data = dict(request.data)
-        print("type" , type(post_data))
-        print("post_data====" , post_data)
+        #print("type" , type(post_data))
+        #print("post_data====" , post_data)
         # user.multiFactor.user.uid
         uid=post_data['authResult']['uid']
         accessToken=post_data['authResult']['accessToken']
@@ -184,7 +231,7 @@ class LoginWithGoogle(APIView):
         displayName=post_data['authResult']['displayName']
         email=post_data['authResult']['email']
         emailVerified=post_data['authResult']['emailVerified']
-        print(uid,accessToken , refreshToken)
+        #print(uid,accessToken , refreshToken)
         queryset=Users.objects.filter(google_uid=uid)
         if queryset.exists():
             self.user=queryset[0]
@@ -207,7 +254,7 @@ class LoginWithGoogle(APIView):
 class Authenticate(APIView):
     def post(self, request, format=None):
         post_data=dict(request.data)
-        print("from authenticate" , dict(self.request.session))
+        #print("from authenticate" , dict(self.request.session))
         if self.request.session.get('user_id')!= None:
         # if self.request.session.exists(self.request.session.get('user_id'):
             return Response({"result":self.request.session['user_id']} , status=status.HTTP_200_OK)

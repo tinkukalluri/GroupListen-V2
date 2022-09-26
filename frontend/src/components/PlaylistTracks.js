@@ -10,15 +10,24 @@ export default function PlaylistTracks(props) {
     }, [])
 
     function getPlaylistTracks(offset = 0, limit = 100) {
-        var path = `/spotify/playlists-tracks?id=${props.id}&offset=${offset}&limit=${limit}`
-        fetch(path, { method: 'GET' }).then(response => response.json()).then(data => {
-            console.log(data.tinku)
-            console.log(data)
-            if (data.Error == undefined && data.error == undefined && data.tracks != undefined) {
-                setPlaylistTracks(data.tracks)
-                getPlaylistTracksJSX(data.tracks)
-            }
-        })
+        if (props.album) {
+            var endpoint = `/spotify/album-tracks?id=${props.id}&offset=${offset}&limit=${limit}`
+            fetch(endpoint).then(response => response.json()).then(data => {
+                console.log(data)
+                setPlaylistTracks(data.result)
+                getPlaylistTracksJSX(data.result)
+            })
+        } else {
+            var path = `/spotify/playlists-tracks?id=${props.id}&offset=${offset}&limit=${limit}`
+            fetch(path, { method: 'GET' }).then(response => response.json()).then(data => {
+                console.log(data.tinku)
+                console.log(data)
+                if (data.Error == undefined && data.error == undefined && data.tracks != undefined) {
+                    setPlaylistTracks(data.tracks)
+                    getPlaylistTracksJSX(data.tracks)
+                }
+            })
+        }
     }
 
     function handleListClick(e, track_id) {
@@ -62,7 +71,7 @@ export default function PlaylistTracks(props) {
             <a class="playlist-item" onClick={(e) => { props.back() }} >
                 back
             </a>
-            {playlistTracksJSX}
+            {playlistTracksJSX == -1 ? <h4>Loading</h4> : playlistTracksJSX}
         </>
     )
 }

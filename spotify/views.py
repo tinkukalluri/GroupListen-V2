@@ -14,7 +14,7 @@ from spotify.models import *
 from .views_2 import *
 
 # def spotifyView(request):
-#     print(SpotifyToken.objects.all()[0].refresh_token)
+#     ##print(SpotifyToken.objects.all()[0].refresh_token)
 #     return Response({"data":SpotifyToken.objects.all()[0].refresh_token} , status=status.HTTP_200_OK)
     
 
@@ -32,7 +32,7 @@ class AuthURL(APIView):
         }).prepare().url
 
         # url="https://accounts.spotify.com/authorize?scope="+scopes+"&response_type=code&redirect_uri=http://127.0.0.1:333/spotify/redirect&client_id="+CLIENT_ID
-        # print("url::"+url)
+        # ##print("url::"+url)
 
         return Response({'url': url}, status=status.HTTP_200_OK)
 
@@ -41,7 +41,7 @@ class spotify_callback(APIView):
     def get(self, request, format=None):
         code = request.GET.get('code')
         error = request.GET.get('error')
-        print('code===========================================================' , code)
+        ##print('code===========================================================' , code)
         response = post('https://accounts.spotify.com/api/token', data={
             'grant_type': 'authorization_code',
             'code': code,
@@ -49,13 +49,13 @@ class spotify_callback(APIView):
             'client_id': CLIENT_ID,
             'client_secret': CLIENT_SECRET
         }).json()
-        print("================================================================================",response)
+        ##print("================================================================================",response)
         access_token = response.get('access_token')
         token_type = response.get('token_type')
         refresh_token = response.get('refresh_token')
         expires_in = response.get('expires_in')
         error = response.get('error')
-        print('=====================' , dict(self.request.session))
+        ##print('=====================' , dict(self.request.session))
         update_or_create_user_tokens(
             self.request.session['user_id'], access_token, token_type, expires_in, refresh_token)
         return redirect('frontend:join')
@@ -69,23 +69,30 @@ class IsAuthenticated(APIView):
 
 
 
+def check_sync(room_curr_song , user_curr_song):
+    print('check_synccheck_synccheck_synccheck_synccheck_synccheck_synccheck_synccheck_synccheck_sync')
+    if room_curr_song==user_curr_song:
+        return True
+    return False
+    
+
 
 
 class CurrentSong(APIView):
     def get(self, request, format=None):
         room_code = self.request.session.get('room_code')
-        print("currentSong::room_code:"+room_code)
+        ##print("currentSong::room_code:"+room_code)
         room = Room.objects.filter(code=room_code)
         if room.exists():
             room = room[0]
         else:
             return Response({}, status=status.HTTP_404_NOT_FOUND)
-        host = room.host.id
-        #comment this because we want non-host to watch there current_song playing
-        # if host != self.request.session.session_key:
+        user_id = self.request.session.get('user_id')
+        #comment this because we want non-user_id to watch there current_song playing
+        # if user_id != self.request.session.session_key:
         #     return Response({}, status=status.HTTP_203_NON_AUTHORITATIVE_INFORMATION)
         endpoint = "/me/player/currently-playing"
-        response = execute_spotify_api_request(host, endpoint , get_=True)
+        response = execute_spotify_api_request(user_id, endpoint , get_=True)
 
         if 'error' in response or 'item' not in response:
             return Response({'nope':"if 'error' in response or 'item' not in response:"}, status=status.HTTP_204_NO_CONTENT)
@@ -109,7 +116,7 @@ class CurrentSong(APIView):
 
             
 
-        update_room_song(room , song_id)
+        update_room_song(room , song_id , user_id)
 
         song = {
             'title': item.get('name'),
@@ -120,15 +127,16 @@ class CurrentSong(APIView):
             'is_playing': is_playing,
             'votes': len(Vote.objects.filter(room=room, song_id=song_id)),
             'id': song_id,
-            'votes_required':room.votes_to_skip
+            'votes_required':room.votes_to_skip,
+            'in_sync':check_sync( room_curr_song=room.current_song ,user_curr_song=song_id )
         }
         # return Response(response, status=status.HTTP_200_OK) // this response will give all the data about currently playing audio...
         return Response(song, status=status.HTTP_200_OK)
 
-def update_room_song( room, song_id):
+def update_room_song( room, song_id , user_id):
         current_song = room.current_song
 
-        if current_song != song_id:
+        if current_song != song_id and room.host.id==user_id:
             room.current_song = song_id
             votes = Vote.objects.filter(room=room).delete()
             room.save(update_fields=['current_song'])
@@ -138,7 +146,10 @@ class PauseSong(APIView):
         room_code = self.request.session.get('room_code')
         room = Room.objects.filter(code=room_code)[0]
         if self.request.session['user_id'] == room.host.id or room.guest_can_pause:
-            pause_song(room.host.id)
+            guest_list=room.guests['guests']
+            print('pausepausepausepausepausepausepausepausepausepausepausepausepause')
+            for i , user in enumerate(guest_list):
+                pause_song(user)
             return Response({}, status=status.HTTP_204_NO_CONTENT)
         
         return Response({}, status=status.HTTP_403_FORBIDDEN)
@@ -149,7 +160,10 @@ class PlaySong(APIView):
         room_code = self.request.session.get('room_code')
         room = Room.objects.filter(code=room_code)[0]
         if self.request.session['user_id'] == room.host.id or room.guest_can_pause:
-            play_song(room.host.id)
+            guest_list=room.guests['guests']
+            print('playplayplayplayplayplayplayplayplayplayplayplayplayplayplayplayplay')
+            for i , user in enumerate(guest_list):
+                play_song(user)
             return Response({}, status=status.HTTP_204_NO_CONTENT)
         
         return Response({}, status=status.HTTP_403_FORBIDDEN)
@@ -171,23 +185,26 @@ class SkipSong(APIView):
             self.track_list=self.queue.tracks['tracks']
             self.track_list.sort(key=lambda v : v['tot_votes'], reverse=True)
             track_temp=self.track_list.pop(0)
-            print(track_temp)
+            ##print(track_temp)
             # 
             self.track_id=track_temp['track']['track_id']
-            self.user_id=self.request.session['user_id']
             # https://api.spotify.com/v1/me/player/queue?uri=spotify%3Atrack%3A4h4QlmocP3IuwYEj2j14p8
             endpoint='/me/player/queue?uri=spotify:track:{track_id}'.format(track_id=self.track_id)
-            result=execute_spotify_api_request(self.user_id , endpoint , {} ,post_=True )
-            #print(result)
+            guest_list=room.guests['guests']
+            print('4444444444444444444444444444444444444444444444444444444444444444444444444444')
+            for i , user in enumerate(guest_list):
+                result=execute_spotify_api_request(user , endpoint , {} ,post_=True )
+                print('result::' , result)
+                if result!=None:
+                    return Response(result , status=status.HTTP_200_OK)
+                else:
+                    skip_song(user)
 
-            if result!=None:
-                return Response(result , status=status.HTTP_200_OK)
-            else:
-                skip_song(self.user_id)
-                self.queue.save(update_fields=['tracks'])
-                return Response({
-                    'result':True
-                } ,status=status.HTTP_200_OK)
+            # saving the poped queue
+            self.queue.save(update_fields=['tracks'])
+            return Response({
+                'result':True
+            } ,status=status.HTTP_200_OK)
             # 
         else:
             vote = Vote(user=self.request.session['user_id'],

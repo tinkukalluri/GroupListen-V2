@@ -3,7 +3,7 @@ class c1:
     def fun1(self):
         pass
     def fun2():
-        print("tinku")
+        #print("tinku")
 
-print(c1.value)
+#print(c1.value)
 c1.fun2()

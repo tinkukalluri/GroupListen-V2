@@ -32,22 +32,22 @@ class FetchMessages(APIView):
     def get(self, request , format=None):
         msgs={}
         if loggedIn(request):
-            #print("user_logged_in")
+            ##print("user_logged_in")
             post_data = dict(request.data)
-            #print(post_data)
+            ##print(post_data)
             room_code = self.request.session.get('room_code')
             msgs[-1]=self.request.session.get('user_id')
-            #print("user authenticated by session")
+            ##print("user authenticated by session")
             user_obj=Users.objects.filter(id=msgs[-1])[0]
             room_obj=Room.objects.filter(code=room_code)[0]
             querySet=Messages.objects.filter(room_id=room_obj.id)
             if querySet.exists():
                 for row in querySet:
                     push_to_msgs(row , msgs)
-            #print(msgs)
+            ##print(msgs)
             return Response(msgs , status=status.HTTP_200_OK)
         else:
-            #print("user not logged")
+            ##print("user not logged")
             return Response({"user_not_logged_in":False }, status=status.HTTP_204_NO_CONTENT)
 
 
@@ -62,8 +62,8 @@ class InputText(APIView):
             self.user_id=self.request.session['user_id']
             self.room_code=self.request.session['room_code']
             self.text=post_data["text"]
-            #print("inputtext")
-            #print(self.user_id , self.room_code , self.text)
+            ##print("inputtext")
+            ##print(self.user_id , self.room_code , self.text)
             self.user_obj=Users.objects.filter(id=self.user_id)[0]
             self.photoURL=self.user_obj.photoURL
             getPhotoURL(self.user_obj)
@@ -80,5 +80,5 @@ class InputText(APIView):
                 "msg_data":self.msg
             } , status=status.HTTP_200_OK)
         else:
-            #print("user not logged")
+            ##print("user not logged")
             return Response({"something went wrong":False }, status=status.HTTP_204_NO_CONTENT)

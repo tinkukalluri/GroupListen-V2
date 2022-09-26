@@ -78,6 +78,7 @@ export default class MusicPlayer extends Component {
                                 <SkipNextIcon />
                             </IconButton>
                             <h5>{this.props.votes} / {this.props.votes_required} </h5>
+
                         </div>
                     </Grid>
                 </Grid>

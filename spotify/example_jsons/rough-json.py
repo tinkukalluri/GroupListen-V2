@@ -37,6 +37,6 @@ l1=[]
 with open(path) as json_file:
     data = json.load(json_file)
     d=getPlaylists_items(data)
-    print(d[0])
+    #print(d[0])
 
 

@@ -26,8 +26,8 @@ export default function Login(props) {
 
     function parseAuth(auth_result) {
         return {
-            "accessToken": auth_result.user.multiFactor.user.stsTokenManager.accessToken,
-            "refreshToken": auth_result.user.multiFactor.user.stsTokenManager.refreshToken,
+            accessToken: auth_result.user.multiFactor.user.stsTokenManager.accessToken,
+            refreshToken: auth_result.user.multiFactor.user.stsTokenManager.refreshToken,
             uid: auth_result.user.multiFactor.user.uid,
             photoURL: auth_result.user.multiFactor.user.photoURL,
             phoneNumber: auth_result.user.multiFactor.user.phoneNumber,

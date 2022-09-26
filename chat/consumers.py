@@ -13,7 +13,7 @@ def getList(dict):
 
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self ):
-        print("connected to websocket")
+        #print("connected to websocket")
         await self.accept()
         await self.send(text_data=json.dumps({
             "conn_status":True,
@@ -33,16 +33,16 @@ class ChatConsumer(AsyncWebsocketConsumer):
         # if(self._count==1):
         # Join room group
         if text_data_json.get('user_id')!=None and text_data_json.get('room_code')!=None:
-            print(text_data_json.get('room_code'))
+            #print(text_data_json.get('room_code'))
             self.my_room_group_name=str(text_data_json["room_code"])
             self.user_id=text_data_json["user_id"]
-            print("self.my_room_group_name***********"+str(self.my_room_group_name),self.user_id)
+            #print("self.my_room_group_name***********"+str(self.my_room_group_name),self.user_id)
             await self.channel_layer.group_add(
             self.my_room_group_name,
             self.channel_name
                 )
         else:
-            print(text_data_json)
+            #print(text_data_json)
             msg_id=getList(text_data_json)[0]
             text = text_data_json[msg_id]['text']
             user_id=text_data_json[msg_id]['msg_from']
@@ -58,7 +58,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
 
     # Receive message from room group
     async def chat_message(self, event):
-        print("message from room group",event)
+        #print("message from room group",event)
         # Send message to WebSocket
         await self.send(text_data=json.dumps(
             event

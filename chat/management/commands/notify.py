@@ -11,7 +11,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         channel_layer = get_channel_layer()
-        print("hello")
+        #print("hello")
         async_to_sync(channel_layer.group_send)("chat_tinku", {
                     'type': 'chat_message',
                     'message': "notification",

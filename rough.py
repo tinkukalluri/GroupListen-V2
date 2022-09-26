@@ -7,14 +7,14 @@
 
 # def fun2():
 #     fun3=fun1
-#     print(fun3())
+#     #print(fun3())
 
 # class c1:
 #     x1=[]
 #     def __init__(self ):
 #         pass
 #     def get(self):
-#         print("in c1")
+#         #print("in c1")
 #     def __str__(self):
 #         return "toString()"
 
@@ -23,7 +23,7 @@
 #         self.class_name = class_name
 #     def call_class(self):
 #         obj1=self.class_name()
-#         print(obj1)
+#         #print(obj1)
 
 
 # fun2()
@@ -58,7 +58,7 @@
 # }
 
 # if 0 in dic['arr']:
-#     print("yupp")
+#     #print("yupp")
 
 from abc import abstractclassmethod, abstractmethod
 
@@ -70,14 +70,14 @@ class abs:
 
     @abstractmethod
     def fun3():
-        print('i m a static method')
+        #print('i m a static method')
 
     def fun2(self):
-        print("from fun2 in abs")
+        #print("from fun2 in abs")
 
 class c1(abs):
     def fun1(self):
-        print('from c1')
+        #print('from c1')
         super().fun2()
 
 abs_obj1= c1()

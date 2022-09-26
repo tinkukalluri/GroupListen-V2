@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import { Grid, Button, Typography, IconButton, TextField } from "@material-ui/core";
+
+
+// icons
 import { AiFillSetting } from "react-icons/ai";
+import { AiFillInfoCircle } from "react-icons/ai";
+import { AiOutlineSync } from "react-icons/ai";
+
 
 
 import Queuebox from "./Queuebox";
@@ -9,7 +15,7 @@ import Searchbox from "./Searchbox"
 import PlayListbox from "./PlayListbox";
 import CreateRoomPage from "./CreateRoomPage";
 import MusicPlayer from "./MusicPlayer";
-
+import Info from './Info'
 
 // importing css
 import './css/room.css'
@@ -25,10 +31,13 @@ export default class Room extends Component {
             isHost: false,
             showSettings: false,
             spotifyAuthenticated: false,
-            song: {},
+            song: {
+                in_sync: false,
+            },
             search_q: "",
             error: "",
             show_playlist: true,
+            show_info: false,
         };
         this.roomCode = this.getroomcode()
         this.updateShowSettings = this.updateShowSettings.bind(this);
@@ -38,6 +47,7 @@ export default class Room extends Component {
         this.handleTextFieldChange = this.handleTextFieldChange.bind(this);
         this.getRoomDetails();
         this.getCurrentSong();
+        this.authenticateSpotify();
     }
 
 
@@ -75,9 +85,9 @@ export default class Room extends Component {
                     guestCanPause: data.guest_can_pause,
                     isHost: data.is_host,
                 });
-                this.authenticateSpotify();
             });
     }
+
 
     authenticateSpotify() {
         fetch('/spotify/is-authenticated', { method: 'GET' }).then((response) => {
@@ -153,38 +163,58 @@ export default class Room extends Component {
         });
     }
 
+    handleInfoButtonClick(e) {
+        this.setState({
+            show_info: this.state.show_info ? false : true,
+        })
+    }
+
     renderSettings() {
-        return (
-            <Grid container spacing={1}>
-                <Grid item xs={12} align="center">
-                    <CreateRoomPage
-                        update={true}
-                        votesToSkip={this.state.votesToSkip}
-                        guestCanPause={this.state.guestCanPause}
-                        roomCode={this.roomCode}
-                        updateCallback={this.getRoomDetails}
-                    />
-                </Grid>
-                <Grid item xs={12} align="center">
-                    <Button
-                        variant="contained"
-                        color="secondary"
-                        onClick={this.leaveButtonPressed}
-                    >
-                        Leave Room
-                    </Button>
-                </Grid>
-                <Grid item xs={12} align="center">
-                    <Button
-                        variant="contained"
-                        color="secondary"
-                        onClick={() => this.updateShowSettings(false)}
-                    >
-                        Close
-                    </Button>
-                </Grid>
-            </Grid>
-        );
+        if (this.state.show_info) {
+            return (
+                <Info handleInfoButtonClick={(e) => { this.handleInfoButtonClick(e) }} />
+            )
+        } else {
+            return (
+                < div className="settings-container" >
+
+                    <IconButton className="settings-info" onClick={(e) => this.handleInfoButtonClick(e)}>
+                        <AiFillInfoCircle style={{ "color": "black" }} />
+                    </IconButton>
+                    <Grid container spacing={1}>
+                        {this.state.isHost ? (
+                            <Grid item xs={12} align="center">
+                                <CreateRoomPage
+                                    update={true}
+                                    votesToSkip={this.state.votesToSkip}
+                                    guestCanPause={this.state.guestCanPause}
+                                    roomCode={this.roomCode}
+                                    updateCallback={this.getRoomDetails}
+                                />
+                            </Grid>
+                        ) : null}
+                        <Grid item xs={12} align="center">
+                            <Button
+                                variant="contained"
+                                color="secondary"
+                                onClick={this.leaveButtonPressed}
+                            >
+                                Leave Room
+                            </Button>
+                        </Grid>
+                        <Grid item xs={12} align="center">
+                            <Button
+                                variant="contained"
+                                color="secondary"
+                                onClick={() => this.updateShowSettings(false)}
+                            >
+                                Close
+                            </Button>
+                        </Grid>
+                    </Grid>
+                </div >
+            );
+        }
     }
 
     getCurrentSong() {
@@ -227,6 +257,14 @@ export default class Room extends Component {
         // })
     }
 
+    handleSyncButtonClick(e) {
+        console.log('Sync button clicked')
+        fetch('/spotify/sync-track').then(response => response.json()).then((data) => {
+            console.log('sync sync sync sync sync sync sync sync sync sync ')
+            console.log(data)
+        })
+    }
+
 
     render() {
         if (this.state.showSettings) {
@@ -252,23 +290,34 @@ export default class Room extends Component {
                                     onClick={(e) => { this.inputSearchClick(e) }}
                                 />
                             </div>
-                            {this.state.show_playlist ? null : <div className="search-container">
-                                <Searchbox />
+                            {this.state.show_playlist ? (
+                                <div className="playlist-container">
+                                    <PlayListbox playtrack={this.playtrack} />
+                                </div>
+                            ) : <div className="search-container">
+                                <Searchbox search_q={this.state.search_q} />
                             </div>}
-                            <div className="playlist-container">
-                                <PlayListbox playtrack={this.playtrack} />
-                            </div>
+
                         </div>
                     </div>
                     <div className="room-middle">
                         <div className="room-room-container">
-                            <div className="queue-container">
+                            {(this.state.song.in_sync != true) ? (
+                                <div className='pop-up'>
+                                    The music is out of sync with host <br />
+                                    Please sync...
+                                    <IconButton className="settings-info top-15p" onClick={(e) => this.handleSyncButtonClick(e)}>
+                                        <AiOutlineSync style={{ "color": "black" }} />
+                                    </IconButton>
+                                </div>
+                            ) : null}
+                            < div className="queue-container">
                                 <Queuebox playtrack={this.playtrack}  {...this.state.song} />
                             </div>
                             <div className="music-player">
                                 <MusicPlayer  {...this.state.song} playtrack={this.playtrack} />
                                 <div className="room-setting">
-                                    {this.state.isHost ? this.renderSettingsButton() : null}
+                                    {this.renderSettingsButton()}
                                 </div>
                             </div>
                         </div>

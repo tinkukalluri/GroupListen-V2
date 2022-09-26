@@ -32,7 +32,9 @@ class Room(models.Model):
     votes_to_skip = models.IntegerField(null=False, default=1)
     created_at = models.DateTimeField(auto_now_add=True)
     current_song=models.CharField(max_length=50 , null=True)
-
+    guests=models.JSONField(default={
+        'guests':[]
+    })
     class meta:
         verbose_name = "rooms"
         verbose_name_plural = "all rooms"
@@ -49,7 +51,7 @@ class Messages(models.Model):
         ''' On save, update timestamps '''
         # converting utc to itc , the gap is 5.5 hours
         self.send_on=timezone.now() + timezone.timedelta(hours=5.5)
-        print("timezome.now()::", self.send_on)
+        #print("timezome.now()::", self.send_on)
         #     self.created = timezone.now()
         # self.modified = timezone.now()
         return super(Messages , self).save(*args, **kwargs)

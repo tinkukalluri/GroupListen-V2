@@ -4,6 +4,7 @@ export default function Queuebox(props) {
 
     const [queue, setQueue] = useState(-1)
     const [queueJSX, setQueueJSX] = useState(-1)
+    const [prevQueueTrack, setprevQueueTrack] = useState(-1)
 
     useEffect(() => {
         const q_intervel = setInterval(() => {
@@ -22,8 +23,18 @@ export default function Queuebox(props) {
             if (data.Error == undefined && data.error == undefined && data.queue != undefined) {
                 setQueue(data.queue)
             }
+
         })
     }
+
+    const songProgress = (parseInt(props.time) / parseInt(props.duration)) * 100;
+    if (songProgress >= 99 && songProgress <= 100 && props.id != prevQueueTrack) {
+        if (queue.length > 0 && props.title) {
+            setprevQueueTrack(props.id)
+            props.playtrack(queue[0].track.track_id)
+        }
+    }
+
 
     function up_down_vote(track_id) {
         const requestOptions = {
@@ -61,10 +72,8 @@ export default function Queuebox(props) {
                 )
             }
             )
-            const songProgress = (parseInt(props.time) / parseInt(props.duration)) * 100;
-            if (songProgress >= 99 && songProgress <= 100) {
-                queue.length > 0 ? props.playtrack(queue[0].track.track_id) : null
-            }
+            // checking if we reached the end of the song so as to play next song in the queue
+            t.splice(0, 0, <h3>Your Queue</h3>)
             console.log(t)
             setQueueJSX(t)
         }
@@ -76,7 +85,7 @@ export default function Queuebox(props) {
 
     return (
         <div>
-            {queueJSX}
+            {queueJSX == -1 ? <h4>Loading</h4> : queueJSX}
         </div>
     )
 }

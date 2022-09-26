@@ -62,9 +62,10 @@ export default function HomePage(props) {
     }
 
 
-    authenticateUser()
+
     // component did mount
     useEffect(() => {
+        authenticateUser()
     }, [])
 
     function renderHomePage() {

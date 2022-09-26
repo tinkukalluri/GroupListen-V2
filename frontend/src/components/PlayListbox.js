@@ -50,6 +50,7 @@ export default function PlayListbox(props) {
                     </a>
                 )
             })
+            l1.splice(0, 0, <h3 style={{ 'text-align': 'center' }}>Your Playlists</h3>)
             return l1
         }
     }

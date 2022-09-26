@@ -6,7 +6,7 @@ class RoomSerializer(serializers.ModelSerializer):
     class Meta:
         model = Room
         fields = ('id', 'code', 'host', 'guest_can_pause',
-                    'votes_to_skip', 'created_at' , 'current_song')
+                    'votes_to_skip', 'created_at' , 'current_song' , 'guests')
 
 
 class CreateRoomSerializer(serializers.ModelSerializer):

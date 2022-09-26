@@ -18,4 +18,7 @@ urlpatterns = [
     path('add-to-queue' , views_2.AddToQueue.as_view()),
     path('get-room-queue' , views_2.GetRoomQueue.as_view()),
     path('up-down-vote' , views_2.UpDownVotes.as_view()),
+    path('sync-track' , views_2.Sync_track.as_view()),
+    path('search' , views_2.Search.as_view()),
+    path('album-tracks', views_2.AlbumTracks.as_view()),
 ]

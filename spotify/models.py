@@ -23,14 +23,14 @@ class Queue(models.Model):
     user_id = models.ForeignKey( Users, on_delete=models.CASCADE)
     room_id=models.ForeignKey(Room , on_delete=models.CASCADE)
     added_on=models.DateTimeField(null=True)
-    tracks=models.JSONField()
-    votes=models.IntegerField()
+    tracks=models.JSONField(default=dict({'tracks':[]}))
+    # votes=models.IntegerField()
 
     def save(self, *args, **kwargs):
         ''' On save, update timestamps '''
         # converting utc to itc , the gap is 5.5 hours
         self.send_on=timezone.now() + timezone.timedelta(hours=5.5)
-        print("timezome.now()::", self.send_on)
+        #print("timezome.now()::", self.send_on)
         #     self.created = timezone.now()
         # self.modified = timezone.now()
         return super(Queue , self).save(*args, **kwargs)
