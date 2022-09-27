@@ -56,7 +56,14 @@ export default function Info(props) {
                     </IconButton>
                 </Grid>
                 <Grid item xs={12} align="center">
-                    <Button color="secondary" variant="contained" onClick={(e) => { props.handleInfoButtonClick(e) }} >
+                    <Button color="secondary" variant="contained" onClick={(e) => {
+                        try {
+                            props.handleInfoButtonClick(e)
+                        } catch (TypeError) {
+                            window.location.replace('/home')
+                        }
+
+                    }} >
                         Back
                     </Button>
                 </Grid>

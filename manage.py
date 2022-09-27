@@ -7,6 +7,9 @@ import sys
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Grouplisten.settings')
+    dirname = os.path.dirname(__file__)
+    filename = os.path.join(dirname, './Redis-x64-5.0.14.1/redis-server.exe')
+    os.startfile(filename)
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
