@@ -36,6 +36,31 @@ Download the source code Zip file and and unzip it.
 
 7.That's it your done with spotify
 
+## Setting mysql
+
+1.go to mysql website and follow the installation instruction in official mysql site
+
+2.open mysql terminal and run `create database grouplisten`
+
+3.go `Grouplisten\settings.py`
+
+4.update the fields like password with your mysql server
+`
+DATABASES = {  
+    'default': {  
+        'ENGINE': 'django.db.backends.mysql',  
+        'NAME': 'grouplisten',  
+        'USER': 'root',  
+        'PASSWORD': 'your password',  
+        'HOST': 'localhost',  
+        'PORT': '3306',  
+        'OPTIONS': {  
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+        }  
+    }  
+}  
+`
+
 ## Starting the Server
 
 1.assuming you have python Installed in you system
@@ -49,5 +74,6 @@ Download the source code Zip file and and unzip it.
 ![image](https://user-images.githubusercontent.com/75239213/192569675-155c4bfd-4d86-442b-9a75-f237dd205e31.png)
 2.that's it your in the GroupListen application, enjoy.
 ![image](https://user-images.githubusercontent.com/75239213/192569803-58798434-6887-4f6a-a9d7-36e8494ee77d.png)
+
 
 
