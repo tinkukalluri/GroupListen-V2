@@ -172,7 +172,7 @@ export default class Room extends Component {
     renderSettings() {
         if (this.state.show_info) {
             return (
-                <Info handleInfoButtonClick={(e) => { this.handleInfoButtonClick(e) }} />
+                <Info handleInfoButtonClick={(e) => { this.handleInfoButtonClick(e) }} home={true} />
             )
         } else {
             return (

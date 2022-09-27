@@ -19,6 +19,7 @@ import Room from "./Room";
 
 // importing css
 import './css/FirebaseLogin.css'
+import Info from "./Info";
 
 export default function Login(props) {
     const [authResult, setAuthResult] = useState('')
@@ -162,6 +163,9 @@ export default function Login(props) {
                     </Route>
                     <Route path="/create">
                         <HomePage />
+                    </Route>
+                    <Route path="/info">
+                        <Info />
                     </Route>
                 </Switch>
             </Router>

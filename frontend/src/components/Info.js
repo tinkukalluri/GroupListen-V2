@@ -17,57 +17,124 @@ export default function Info(props) {
     const [page, setPage] = useState(pages.JOIN);
 
     function joinInfo() {
-        return "Join page";
+        return (
+            <>
+                <p>
+                    Click on the "Join" button and enter the unique six digit code you have
+                    to join into your friends group, if you don't have one create a room.
+                </p>
+            </>
+        )
     }
 
     function createInfo() {
-        return "Create page";
+        return (
+            <>
+                <p>
+                    Click on the "create" button to create a room and be the host and share the url to friends
+                    and family to invite them to join the group.
+                </p>
+            </>
+        )
     }
+
 
     useEffect(() => {
         console.log("ran");
         return () => console.log("cleanup");
     });
 
-    return (
-        <div className="info-container">
-            <Grid container spacing={1}>
-                <Grid item xs={12} align="center">
-                    <Typography component="h4" variant="h4">
-                        What is House Party?
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} align="center">
-                    <Typography variant="body1">
-                        {page === pages.JOIN ? joinInfo() : createInfo()}
-                    </Typography>
-                </Grid>
-                <Grid item xs={12} align="center">
-                    <IconButton
-                        onClick={() => {
-                            page === pages.CREATE ? setPage(pages.JOIN) : setPage(pages.CREATE);
-                        }}
-                    >
-                        {page === pages.CREATE ? (
-                            <NavigateBeforeIcon />
-                        ) : (
-                            <NavigateNextIcon />
-                        )}
-                    </IconButton>
-                </Grid>
-                <Grid item xs={12} align="center">
-                    <Button color="secondary" variant="contained" onClick={(e) => {
-                        try {
-                            props.handleInfoButtonClick(e)
-                        } catch (TypeError) {
-                            window.location.replace('/home')
-                        }
+    if (props.home != undefined && props.home == true) {
+        return (
+            <>
+                <div className="info-container">
+                    <Grid container spacing={1}>
+                        <Grid item xs={12} align="center">
+                            <ol>
+                                <li>
+                                    <p>Open the offical spotify applicatioin in a different tab or windows application and play any music
+                                        and let the music play in the background
+                                        <br />
+                                        By doing so u can see that the music playing in the offical spotify is being showed
+                                        in the music player of GroupListen app
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Make sure you have cleared the Queue in the offical spotify
+                                        applicatioin for the first time</p>
+                                </li>
+                                <li>
+                                    <p>If your not able to play/pause or skip or your queue is not
+                                        being played as expected means your using a free account of
+                                        spotify to unlock the full potential of our app make sure you
+                                        purchase the premium account of spotify</p>
+                                </li>
+                            </ol>
+                        </Grid>
+                        <Grid item xs={12} align="center">
+                            <Button color="secondary" variant="contained" onClick={(e) => {
+                                try {
+                                    props.handleInfoButtonClick(e)
+                                } catch (TypeError) {
+                                    window.location.replace('/home')
+                                }
+                            }} >
+                                Back
+                            </Button>
+                        </Grid>
+                    </Grid>
+                </div>
+            </>
+        )
+    }
+    else {
+        return (
+            <div className="info-container">
+                <Grid container spacing={1}>
+                    <Grid item xs={12} align="center">
+                        <Typography component="h4" variant="h4">
+                        </Typography>
+                        <p>
+                            What is House Party?<br />
+                            It is a new way for people to play music together in real time <br />
+                            Members in the group can send and receive messages<br />
+                            Members can upvote or downvote a song, the one with the highest number of
+                            votes will be the next track to play<br />
+                            You can add songs from your playlist and also from search into queue
+                        </p>
+                    </Grid>
+                    <Grid item xs={12} align="center">
+                        <Typography variant="body1">
+                            {page === pages.JOIN ? joinInfo() : createInfo()}
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} align="center">
+                        <IconButton
+                            onClick={() => {
+                                page === pages.CREATE ? setPage(pages.JOIN) : setPage(pages.CREATE);
+                            }}
+                        >
+                            {page === pages.CREATE ? (
+                                <NavigateBeforeIcon />
+                            ) : (
+                                <NavigateNextIcon />
+                            )}
+                        </IconButton>
+                    </Grid>
+                    <Grid item xs={12} align="center">
+                        <Button color="secondary" variant="contained" onClick={(e) => {
+                            try {
+                                props.handleInfoButtonClick(e)
+                            } catch (TypeError) {
+                                window.location.replace('/home')
+                            }
 
-                    }} >
-                        Back
-                    </Button>
+                        }} >
+                            Back
+                        </Button>
+                    </Grid>
                 </Grid>
-            </Grid>
-        </div>
-    );
+            </div>
+        );
+    }
 }
