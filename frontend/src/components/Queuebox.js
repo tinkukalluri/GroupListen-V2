@@ -9,7 +9,7 @@ export default function Queuebox(props) {
     useEffect(() => {
         const q_intervel = setInterval(() => {
             getQueue()
-        }, 1000)
+        }, 10000)
 
         return () => {
             clearInterval(q_intervel)
