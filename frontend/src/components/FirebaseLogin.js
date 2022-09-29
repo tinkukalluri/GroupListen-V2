@@ -15,6 +15,7 @@ import { firebaseConfig } from "../js/firebase"
 import { redirect_url } from './credentials';
 import HomePage from './HomePage';
 import Room from "./Room";
+import TermsConditions from "./TermsConditions"
 
 
 // importing css
@@ -119,9 +120,9 @@ export default function Login(props) {
                 // firebase.auth.PhoneAuthProvider.PROVIDER_ID
             ],
             // Terms of service url.
-            tosUrl: '<your-tos-url>',
+            tosUrl: 'terms-conditions',
             // Privacy policy url.
-            privacyPolicyUrl: '<your-privacy-policy-url>'
+            privacyPolicyUrl: 'terms-conditions'
         };
 
         // make sure u have added a div with #firebaseui-auth-container id
@@ -166,6 +167,9 @@ export default function Login(props) {
                     </Route>
                     <Route path="/info">
                         <Info />
+                    </Route>
+                    <Route path="/terms-conditions">
+                        <TermsConditions />
                     </Route>
                 </Switch>
             </Router>

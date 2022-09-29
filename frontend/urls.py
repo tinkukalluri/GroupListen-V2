@@ -10,4 +10,5 @@ urlpatterns = [
     path('room/<str:roomcode>', views.index),
     path('info' , views.index),
     path('home' , views.index , name="homepage"),
+    path('terms-conditions' , views.index , name="homepage"),
 ]

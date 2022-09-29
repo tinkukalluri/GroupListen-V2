@@ -5,4 +5,15 @@
   border-radius: 33px;
   width: 60%;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.portfolio-link {
+  margin: 0;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 21px;
 }

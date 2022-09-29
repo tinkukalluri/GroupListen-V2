@@ -73,14 +73,16 @@ export default function Info(props) {
                         </Grid>
                         <Grid item xs={12} align="center">
                             <Button color="secondary" variant="contained" onClick={(e) => {
-                                try {
-                                    props.handleInfoButtonClick(e)
-                                } catch (TypeError) {
-                                    window.location.replace('/home')
-                                }
+                                props.handleInfoButtonClick(e)
                             }} >
                                 Back
                             </Button>
+                        </Grid>
+                        <Grid item xs={12} align="center">
+                            <h6 className="portfolio-link">Application Build by <a style={{
+                                'text-decoration': 'underline',
+                                'color': 'var(--sp-green)'
+                            }} href="https://kalluriabhinandan.web.app/" target="_blank"> Abhinandan Kalluri.</a></h6>
                         </Grid>
                     </Grid>
                 </div>
@@ -122,19 +124,26 @@ export default function Info(props) {
                         </IconButton>
                     </Grid>
                     <Grid item xs={12} align="center">
-                        <Button color="secondary" variant="contained" onClick={(e) => {
-                            try {
-                                props.handleInfoButtonClick(e)
-                            } catch (TypeError) {
-                                window.location.replace('/home')
-                            }
-
+                        <Button color="secondary" variant="contained" to="/home" component={Link} onClick={(e) => {
+                            // catch (TypeError) {
+                            //     window.location.replace('/home')
+                            // }
                         }} >
                             Back
                         </Button>
                     </Grid>
+                    <Grid item xs={12}>
+                        <h6 className="portfolio-link" >Application Build by <a style={{
+                            'text-decoration': 'underline',
+                            'color': 'var(--sp-green)'
+                        }} href="https://kalluriabhinandan.web.app/" target="_blank"> Abhinandan Kalluri.</a></h6>
+                        <p style={{ 'margin': '0' }}>
+                            The github repository of GroupListen-V2 project is private.<br />
+                            The github repository of GroupListen is public.<br />
+                        </p>
+                    </Grid>
                 </Grid>
-            </div>
+            </div >
         );
     }
 }

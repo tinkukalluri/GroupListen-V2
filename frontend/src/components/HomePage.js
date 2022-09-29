@@ -74,7 +74,7 @@ export default function HomePage(props) {
                 <Grid container spacing={3}>
                     <Grid item xs={12} align="center">
                         <Typography variant="h3" compact="h3">
-                            House Party
+                            Group Listen-V2
                         </Typography>
                     </Grid>
                     <Grid item xs={12} align="center">
@@ -94,6 +94,12 @@ export default function HomePage(props) {
                         <Button color="default" to="/" component={Link} onClick={logoutPressed} >
                             Logout
                         </Button>
+                    </Grid>
+                    <Grid item xs={12} align="center">
+                        <h6 className="portfolio-link">Application Build by <a style={{
+                            'text-decoration': 'underline',
+                            'color': 'var(--sp-green)'
+                        }} href="https://kalluriabhinandan.web.app/" target="_blank"> Abhinandan Kalluri.</a></h6>
                     </Grid>
                 </Grid>
             </div>

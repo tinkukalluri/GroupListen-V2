@@ -1,0 +1,11 @@
+.tnc-container {
+  padding: 50px 0 50px 0;
+  background: var(--sp-grey);
+  border: 7px solid black;
+  border-radius: 33px;
+  position: relative;
+}
+
+.warning {
+  color: red;
+}

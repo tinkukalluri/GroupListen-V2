@@ -3,4 +3,5 @@
   background: var(--sp-grey);
   border: 7px solid black;
   border-radius: 33px;
+  position: relative;
 }
