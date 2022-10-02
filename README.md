@@ -9,36 +9,58 @@
 # GroupListen Features
 
 ## Login page
--Used firebase authorization to log user's in.
+- Used firebase authorization(google's OAuth) to log user's in.
 ![image](https://user-images.githubusercontent.com/75239213/193472120-048da497-07f9-4bbd-aec6-0c5bbb1520c2.png)
--User's can login using there gmail
-![image](https://user-images.githubusercontent.com/75239213/193474113-43fda0d0-7b54-4f42-93f2-5d1f7f1de6f0.png)
+- User's can login using there gmail
+---
+<img alt="google-login" src="https://user-images.githubusercontent.com/75239213/193474113-43fda0d0-7b54-4f42-93f2-5d1f7f1de6f0.png" width="36%">
+
+---
 
 ## Home page
-![image](https://user-images.githubusercontent.com/75239213/193472148-ef5930de-dda1-4147-b2c8-1c8758e4d9ed.png)
+  ![image](https://user-images.githubusercontent.com/75239213/193472148-ef5930de-dda1-4147-b2c8-1c8758e4d9ed.png)
 
 ## Create-room page
+- Here you can create a room and be the host of the party share the url/room-code with friends and family to invite them into the party
 ![image](https://user-images.githubusercontent.com/75239213/193472211-122a85ca-6f46-4e1d-9d8a-4186798790d1.png)
 
 ## Join-room page
-Use 6 digit unique code to enter into your friends room and have blast
+- Use 6 digit unique code to enter into your friends room and have blast
 ![image](https://user-images.githubusercontent.com/75239213/193472204-4c46e3f3-6a53-49ce-a003-a9e769a5e014.png)
 
 ## Room page
+- This is the console where you can see the currently playing music, tracks next in the queue, your platlists and chat with mate's in the room
 ![image](https://user-images.githubusercontent.com/75239213/193473733-3b880e97-52b8-485a-8c30-41d0e6d62dd1.png)
 
 ---
 
 ### User's Spotify Playlist's
+- Here you can find all the playlist's create by you in the spotigy application of your's
+- you can add tracks from your playlist to queue
+<br/>
   <img alt="playlist/search" src="https://user-images.githubusercontent.com/75239213/193472372-cbc16703-8eee-466f-9c32-a58c5e7c711a.png" width="36%">
 
 ### Room Queue
+- here you will find the songs in the queue the track with the most votes will be the next track that's going to play
+<br/>
   <img alt="queue" src="https://user-images.githubusercontent.com/75239213/193472389-774947e9-08a6-476b-a4c7-82d37fc5a06d.png" width="36%">
 
 ### Chat implemented using Web Socket protocol
+- You can interact with your room mate's here
+<br/>
   <img alt="messages" src="https://user-images.githubusercontent.com/75239213/193472405-3b996a97-e3d4-4326-99dc-755a76f679f5.png" width="36%">
-  
+
+## Track Search
+- you can search for the track and add it to the queue
+<img alt='track-search' src='https://user-images.githubusercontent.com/75239213/193475776-1a7de0fe-8b0b-4286-9599-1365d68fe5f0.png' width="36%" />
+
+## Album Search
+- search for the album and add it to the queue
+<img alt='album-search' src='https://user-images.githubusercontent.com/75239213/193475784-0093792c-23aa-4855-a8aa-b1c318b28a14.png' width="36%"/>
+
 ## Room Setting's
+- If your the host then you can update the room settings or leave the room
+- if your guest you can only leave the room
 ![image](https://user-images.githubusercontent.com/75239213/193473233-0aeee728-dec6-43be-8bb2-35410ee8251c.png)
 
 
@@ -115,6 +137,5 @@ DATABASES = {
 ---
 2.that's it your in the GroupListen application, enjoy.
 ![image](https://user-images.githubusercontent.com/75239213/193472120-048da497-07f9-4bbd-aec6-0c5bbb1520c2.png)
-
 
 
