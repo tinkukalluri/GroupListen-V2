@@ -4,7 +4,7 @@
 
 1.To unlock the full functionality of the application you need to have spotify premium account
 
-2.[application link](http://grouplisten-v2.herokuapp.com/)(Do not use https protocol use only http)
+2.[application link](http://grouplisten-v2.herokuapp.com/)(Do not use https protocol use only http)(not available after 28-11-2022)
 
 # GroupListen Features
 
